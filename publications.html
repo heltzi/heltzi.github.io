@@ -185,26 +185,29 @@
                                                     <div class="pubdetails">
                                                         <h4>Abstract</h4>
                                                         <p>
-                                                            Sketches are a popular approximation technique for large datasets
-                                                            and high-velocity data streams. While custom FPGA-based hardware
-                                                            has shown admirable throughput at sketching, the state-ofthe-
-                                                            art exploits data parallelism by fully replicating resources and
-                                                            constructing independent summaries for every parallel input value.
-                                                            We consider this approach pessimistic, as it guarantees constant
-                                                            processing rates by provisioning resources for the worst case.
-                                                            We propose a novel optimistic sketching architecture for FPGAs
-                                                            that partitions a single sketch into multiple independent banks
-                                                            shared among all input values, thus significantly reducing resource
-                                                            consumption. However, skewed input data distributions can result
-                                                            in conflicting accesses to banks and impair the processing rate. To
-                                                            mitigate the effect of skew, we add mergers that exploit temporal
-                                                            locality by combining recent updates.Our evaluation shows that
-                                                            an optimistic architecture is feasible and reduces the utilization of
-                                                            critical FPGA resources proportionally to the number of parallel
-                                                            input values. We further show that FPGA accelerators provide up
-                                                            to 2.6𝑥 higher throughput than a recent CPU and GPU, while larger
-                                                            sketch sizes enabled by optimistic architectures improve accuracy
-                                                            by up to an order of magnitude in a realistic sketching application.
+                                                            Sketches are a popular approximation technique for large datasets and high-velocity data streams. While custom FPGA-based hardware has shown admirable throughput at sketching, the state-ofthe-art exploits data parallelism by fully replicating resources and constructing independent summaries for every parallel input value. We consider this approach pessimistic, as it guarantees constant processing rates by provisioning resources for the worst case. We propose a novel optimistic sketching architecture for FPGAs
+                                                            that partitions a single sketch into multiple independent banks shared among all input values, thus significantly reducing resource consumption. However, skewed input data distributions can result in conflicting accesses to banks and impair the processing rate. To mitigate the effect of skew, we add mergers that exploit temporal locality by combining recent updates.Our evaluation shows that an optimistic architecture is feasible and reduces the utilization of
+                                                            critical FPGA resources proportionally to the number of parallel input values. We further show that FPGA accelerators provide up to 2.6𝑥 higher throughput than a recent CPU and GPU, while larger sketch sizes enabled by optimistic architectures improve accuracy by up to an order of magnitude in a realistic sketching application.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                 <div class="item mix cpaper" data-year="2023" id="BTW">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse tooltips" title="Abstract">
+                                                            <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="publications/BTW_WS_23_Load_Prediction.pdf" class="tooltips" title="PDF" target="_blank">
+                                                            <i class="fa fa-file-pdf-o"></i>
+                                                            </a>
+                                                        </div>
+                                                        <h4 class="pubtitle">Workload Prediction for IoT Data Management Systems</h4>
+                                                        <div class="pubauthor">David Burrell, Xenofon Chatziliadis, <strong>Eleni Tzirita Zacharatou</strong>, Steffen Zeuch, and Volker Markl</div>
+                                                        <div class="pubcite"><span class="label label-default">Workshop Paper</span> BTW '23: Fachtagung für Datenbanksysteme für Business, Technologie und Web, 2023</div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p> The Internet of Things (IoT) is an emerging technology that allows numerous devices, potentially spread over a large geographical area, to collect and collectively process data from high-speed data streams. To that end, specialized IoT data management systems (IoTDMSs) have emerged. One challenge in those systems is the collection of different metrics from devices in a central location for analysis. This analysis allows IoTDMSs to maintain an overview of the workload on different devices and to optimize their processing. However, as an IoT network comprises of many heterogeneous devices with low computation resources and limited bandwidth, collecting and sending workload metrics can cause increased latency in data processing tasks across the network. In this ongoing work, we present an approach to avoid unnecessary transmission of workload metrics by predicting CPU, memory, and network usage using machine learning (ML). Specifically, we demonstrate the performance of two ML models, linear regression and Long Short-Term Memory (LSTM) neural network, and show the features that we explored to train these models. This work is part of an ongoing research to develop a monitoring tool for our new IoTDMS named NebulaStream.
                                                         </p>
                                                     </div>
                                                 </div>
