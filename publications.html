@@ -175,6 +175,37 @@
                                                     </div>
                                                 </div>
 
+
+                                                <div class="item mix cpaper" data-year="2025" id="GPU_SGD_Operator_Placement">
+                                                <div class="pubmain">
+                                                    <div class="pubassets">
+                                                        <a href="#" class="pubcollapse tooltips" title="Abstract">
+                                                            <i class="fa fa-expand"></i>
+                                                        </a>
+                                                        <a href="publications/NEMO_SGD_ADMS_2025__camera_ready.pdf" class="tooltips" title="PDF" target="_blank">
+
+                                                        <i class="fa fa-file-pdf-o"></i>
+                                                        </a> 
+                                                    </div>
+                                                    <h4 class="pubtitle">GPU-Accelerated Stochastic Gradient Descent for Scalable Operator Placement in Geo-Distributed Streaming Systems</h4>
+                                                    <div class="pubauthor">Tristan Joel Terhaag, Xenofon Chatziliadis, <strong>Eleni Tzirita Zacharatou</strong>, Volker Markl</div>
+                                                    <div class="pubcite">
+                                                        <span class="label label-default">Workshop Paper</span>
+                                                        ADMS@VLDB '25: Proceedings of the International Workshop on Accelerating Analytics and Data Management Systems Using Modern Processor and Storage Architectures, 2025
+                                                    </div>
+                                                </div>
+                                                <div class="pubdetails">
+                                                    <h4>Abstract</h4>
+                                                    <p>
+                                                        Modern geo-distributed stream processing systems, particularly those supporting Internet of Things (IoT) workloads, rely on efficient operator placement strategies to minimize end-to-end latency and avoid overloading resource-constrained edge nodes. Existing approaches, such as NEMO, address this challenge by modeling latency with Euclidean embeddings of network topologies and solving operator placement using spring relaxation. However, their CPU-bound optimization process limits scalability, particularly in large topologies with millions of nodes. 
+                                                    </p>
+                                                    <p> 
+                                                        This paper introduces NEMO-SGD, the first GPU-accelerated, gradient-based optimizer for operator placement in distributed stream processing. NEMO-SGD reformulates the operator placement problem as a differentiable loss function and replaces NEMO’s spring relaxation algorithm with a parallelized Stochastic Gradient Descent (SGD) process. Experiments performed on both synthetic and real-world topologies show that NEMO-SGD can optimize placements in under one second for topologies with up to 1 million nodes. This represents a reduction in the optimization time of up to 70% compared to the state-of-the-art NEMO approach. At the same time, NEMO-SGD maintains or even improves the placement quality. Our work shows that gradient-based, GPU-accelerated parallel optimization serves as a practical and scalable foundation for operator placement in next-generation stream processing systems.
+                                                    </p>
+                                                </div>
+                                            </div>
+
+
                                                 <div class="item mix cpaper" data-year="2025" id="Learned_Spatial_Indexes">
                                                     <div class="pubmain">
                                                         <div class="pubassets">
