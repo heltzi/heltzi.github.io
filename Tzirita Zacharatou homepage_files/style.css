@@ -967,7 +967,7 @@ ul.timeline li .data .text {
 	background-image: url(../img/home.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
-	background-position: right top;
+	background-position: 80% 35%;
 	padding: 20px 10%;
 }
 .home .pageheader .title{
