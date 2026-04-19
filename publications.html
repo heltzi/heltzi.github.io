@@ -148,8 +148,28 @@
                                         <div class="pitems">
 
                                             <!-- ==================== 2026 ==================== -->
+
                                             <div class="content">
                                                 <h3>2026</h3>
+
+                                                <div class="item mix cpaper" data-year="2026" id="ZonalStats-DBTest2026">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse tooltips" title="Abstract">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                        </div>
+                                                        <h4 class="pubtitle">Benchmarking Spatial Operations over Heterogeneous Data: The Case of Zonal Statistics</h4>
+                                                        <div class="pubauthor">Gereon Dusella, Haralampos Gavriilidis, Volker Markl, and <strong>Eleni Tzirita Zacharatou</strong></div>
+                                                        <div class="pubcite"><span class="label label-default">Workshop Paper</span> DBTest@SIGMOD '26: Proceedings of the International Workshop of Testing Database Systems, 2026. To appear.</div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>
+                                                            Zonal Statistics (ZS) is a fundamental operation in Earth Observation workflows. It aggregates raster pixel values within regions defined by vector geometries, such as computing average vegetation indices across farmland parcels. Unlike traditional database operations, which operate within a single data model, ZS requires joining two fundamentally different spatial data models: raster and vector. This data heterogeneity introduces unique benchmarking challenges that existing spatial benchmarks, which focus on either raster or vector operations in isolation, do not address. In this paper, we present an experimental study of spatial operations over raster and vector data, using ZS as a representative case. Evaluating three architecturally diverse systems---PostGIS (relational), Beast (dataflow), and RasDaMan (array-based)---across 25 queries over 17 real-world datasets, we find that the interaction between data characteristics (geometry type, dataset sizes, coordinate reference systems) and system internals causes performance differences of up to 22&times; between competitive systems, while parameter tuning alone can yield over 55&times; speedup within a single system.
+                                                        </p>
+                                                    </div>
+                                                </div>
 
                                                 <div class="item mix cpaper" data-year="2026" id="Nova-EDBT2026">
                                                     <div class="pubmain">
@@ -178,6 +198,7 @@
                                                         </p>
                                                     </div>
                                                 </div>
+
 
                                                 <div class="item mix cpaper" data-year="2026" id="SheetReader-Demo-EDBT2026">
                                                     <div class="pubmain">
