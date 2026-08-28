@@ -152,6 +152,103 @@
                                             <div class="content">
                                                 <h3>2026</h3>
 
+                                                <div class="item mix cpaper" data-year="2026" id="Pierce-SIGSPATIAL2026">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse tooltips" title="Abstract">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://github.com/AntonHackl/Pierce" class="tooltips" title="Code" target="_blank">
+                                                                <i class="fab fa-github"></i>
+                                                            </a>
+                                                            <a href="https://huggingface.co/HPI-Pierce" class="tooltips" title="Datasets" target="_blank">
+                                                                <i class="fa fa-database"></i>
+                                                            </a>
+                                                            <!-- TODO: uncomment once the camera-ready PDF is uploaded
+                                                            <a href="publications/Pierce_SIGSPATIAL26.pdf" class="tooltips" title="PDF" target="_blank">
+                                                                <i class="fa fa-file-pdf-o"></i>
+                                                            </a>
+                                                            -->
+                                                            <!-- TODO: uncomment once the proceedings are in the ACM DL
+                                                            <a href="https://doi.org/10.1145/3841645.3844195" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fas fa-external-link-alt"></i>
+                                                            </a>
+                                                            -->
+                                                        </div>
+                                                        <h4 class="pubtitle">Pierce: GPU Ray Tracing for Spatial Joins over Complex 3D Data</h4>
+                                                        <div class="pubauthor">Anton Hackl and <strong>Eleni Tzirita Zacharatou</strong></div>
+                                                        <div class="pubcite"><span class="label label-danger">Conference Paper</span> SIGSPATIAL '26: Proceedings of the International Conference on Advances in Geographic Information Systems, 2026. To appear.</div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>
+                                                            Many emerging applications, from computational biology to digital twins and urban planning, rely heavily on three-dimensional spatial joins over polyhedral meshes. These joins comprise computationally-intensive triangle-triangle intersection tests that pairwise compare the faces of polyhedral meshes. Since each mesh may contain thousands of faces, the resulting cost challenges the responsiveness of spatial data management techniques. Existing techniques follow the filter-and-refine paradigm, accelerating either the filtering step through indexing or the refinement step through progressive mesh compression combined with GPU parallelization of triangle-triangle tests. However, the former neglects the high cost of intra-geometry refinements, whereas the latter lowers this cost but still relies on the same pairwise triangle-triangle tests. In this paper, we introduce Pierce, an approach that reformulates three-dimensional spatial joins over complex polyhedral meshes as ray tracing operations and leverages the hardware ray tracing units (RT cores) of modern GPUs to accelerate query execution. Our approach casts rays along the edges of one mesh against a spatial hierarchy built over the other, performing ray-node tests at the internal levels to prune distant geometries and ray-triangle tests at the leaves to identify intersecting meshes, both of which RT cores accelerate in hardware. We evaluated Pierce on real and synthetic data against multiple baselines, demonstrating more than two orders of magnitude speedup on digital pathology data compared to the state-of-the-art approach.
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item mix cpaper" data-year="2026" id="WayangSpatial-Demo-SIGSPATIAL2026">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse tooltips" title="Abstract">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="https://github.com/apache/wayang/tree/main/wayang-plugins/wayang-spatial" class="tooltips" title="Code" target="_blank">
+                                                                <i class="fab fa-github"></i>
+                                                            </a>
+                                                            <!-- TODO: uncomment once the camera-ready PDF is uploaded
+                                                            <a href="publications/Wayang_Spatial_Demo_SIGSPATIAL26.pdf" class="tooltips" title="PDF" target="_blank">
+                                                                <i class="fa fa-file-pdf-o"></i>
+                                                            </a>
+                                                            -->
+                                                            <!-- TODO: uncomment once the proceedings are in the ACM DL
+                                                            <a href="https://doi.org/10.1145/3841645.3843115" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fas fa-external-link-alt"></i>
+                                                            </a>
+                                                            -->
+                                                        </div>
+                                                        <h4 class="pubtitle">Cross-Platform Spatial Analytics with Apache Wayang: Geometries Have Boundaries, Your Analytics Shouldn&rsquo;t</h4>
+                                                        <div class="pubauthor">Felix Treykorn, Anton Persitzky, Maximilian Speer, Zoi Kaoudi, and <strong>Eleni Tzirita Zacharatou</strong></div>
+                                                        <div class="pubcite"><span class="label label-info">Demo Paper</span> SIGSPATIAL '26: Proceedings of the International Conference on Advances in Geographic Information Systems, 2026. To appear.</div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>
+                                                            Various platforms support spatial operations, from lightweight geometry libraries to distributed frameworks and spatially extended relational databases, each with its own API and execution paradigm. No single platform is best for every workload, yet migrating between platforms means rewriting application code, locking developers into their initial choice. We present the first general-purpose, cross-platform framework for spatial analytics, extending Apache Wayang to treat spatial operators as first-class citizens. Our framework provides platform-agnostic spatial operators with execution mappings to three backends, enabling developers to build spatial analytics pipelines that run across backends without code rewrites.
+                                                        </p>
+                                                        <p>
+                                                            We demonstrate our framework through spatial analytics on apartment listings in Berlin. Attendees compose query plans with an interactive drag-and-drop builder, assign operators to backends, and view results as maps and charts. By comparing the recorded runtimes of jobs run under different backend assignments, they observe how backend choice affects end-to-end performance, and that no single backend is best for every spatial workload.
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="item mix cpaper" data-year="2026" id="SpatialBenchmarks-Vision-SIGSPATIAL2026">
+                                                    <div class="pubmain">
+                                                        <div class="pubassets">
+                                                            <a href="#" class="pubcollapse tooltips" title="Abstract">
+                                                                <i class="fa fa-expand"></i>
+                                                            </a>
+                                                            <a href="publications/2026_vision_sigspatial_spatial_benchmarks.pdf" class="tooltips" title="PDF" target="_blank">
+                                                                <i class="fa fa-file-pdf-o"></i>
+                                                            </a>
+                                                            <!-- TODO: uncomment once the proceedings are in the ACM DL
+                                                            <a href="https://doi.org/10.1145/3841645.3843415" class="tooltips" title="External link" target="_blank">
+                                                                <i class="fas fa-external-link-alt"></i>
+                                                            </a>
+                                                            -->
+                                                        </div>
+                                                        <h4 class="pubtitle">Envisioning Unified Spatial Benchmarks</h4>
+                                                        <div class="pubauthor">Paul Walther, Fabian Deuser, Chiara Pugliese, Wejdene Mansour, Xuanshu Luo, Johann Maximilian Zollner, Katharina Anders, <strong>Eleni Tzirita Zacharatou</strong>, Chiara Renso, Vagelis Hristidis, Ahmed Eldawy, and Martin Werner</div>
+                                                        <div class="pubcite"><span class="label label-danger">Vision Paper</span> SIGSPATIAL '26: Proceedings of the International Conference on Advances in Geographic Information Systems, 2026. To appear.</div>
+                                                    </div>
+                                                    <div class="pubdetails">
+                                                        <h4>Abstract</h4>
+                                                        <p>
+                                                            The rapid growth of data from domains such as remote sensing and mobility has led to a wide range of algorithms being proposed to analyze, evaluate, structure, and manage spatial data. However, due to the data's inherent multi-modal nature and the diversity of the research community and applications, the field of spatial computing remains highly fragmented. Unlike related domains, such as data management, with institutionalized benchmarks (e.g., Transaction Processing Performance Council (TPC)) and machine learning, with open community-driven comparisons (e.g., Hugging Face), in spatial computing neither a widely accepted semantic nor a performance benchmarking framework exists. Existing spatial benchmarks are usually designed for single tasks or specific applications, which limits comparability, reproducibility, and cumulative progress. In this vision paper, we argue that the lack of a unified task framework defining benchmarking areas constitutes a major bottleneck in spatial computing research. To address this, we analyze existing use cases and advocate for a task-based, generalized taxonomy that enables comprehensive comparisons across approaches spanning diverse data modalities and domains. Finally, we outline concrete next steps towards a unified SIGSPATIAL community approach to benchmarking of spatial computing applications, including reference implementations and governance mechanisms.
+                                                        </p>
+                                                    </div>
+                                                </div>
+
                                                 <div class="item mix cpaper" data-year="2026" id="ZonalStats-DBTest2026">
                                                     <div class="pubmain">
                                                         <div class="pubassets">
